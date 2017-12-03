@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <form action="/words" method="post">
+        <!-- make a title, then make a body, then automatically add a time stamp-->
+        <div class="form-group">
+            <!-- link for changing the width of the textbox: https://stackoverflow.com/questions/24584779/set-textarea-width-to-100-in-bootstrap-modal-->
+            <textarea class="form-control" style="min-width: 70%" rows="1" placeholder="Title" id="Title"></textarea>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" style="min-width: 70%" rows="20" placeholder="Entry" id="Entry"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Post</button>
+    </form>
+{% endblock %}
